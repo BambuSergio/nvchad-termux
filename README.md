@@ -1,8 +1,8 @@
 NvChad 2.5 configurado para Termux.
 
-Instalar los paquetes **stylua** y **lua-language-server** desde los repositorios de Termux para no usarlos desde Mason.
+En Neovim sobre Termux, si se instalan con Mason **stylua** y **lua-language-server** dará errores al editar archivos de LUA. Instalar desde los repositorios de Termux estos paquetes para no usarlos desde Mason.
 
-Con esta configuración, al ejecutar en la línea de comandos de Neovim `:MasonInstallAll`, Mason no los instalará y Neovim los usará del sistema.
+Con esta configuración, al ejecutar en la línea de comandos de Neovim `:MasonInstallAll`, Mason no instalará dichos paquetes y Neovim los usará del sistema.
 
 Se usa la nueva API vim.lsp.config() para configurar los LSP.
 
